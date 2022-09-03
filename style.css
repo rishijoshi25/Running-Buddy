@@ -1,0 +1,136 @@
+:root {
+    --color-brand--1: #ffb545;
+    --color-brand--2: #00c46a;
+  
+    --color-dark--1: #2d3439;
+    --color-dark--2: #42484d;
+    --color-light--1: #aaa;
+    --color-light--2: #ececec;
+    --color-light--3: rgb(214, 222, 224);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--color-light--2);
+    font-weight: 400;
+    line-height: 1.6;
+    height: 100vh;
+    overscroll-behavior-y: none;
+  
+    background-color: #fff;
+    padding: 2.5rem;
+  
+    display: flex;
+  }
+  
+  /* GENERAL */
+  a:link,
+  a:visited {
+    color: var(--color-brand--1);
+  }
+  
+  /* SIDEBAR */
+  .sidebar {
+    flex-basis: 50rem;
+    background-color: var(--color-dark--1);
+    padding: 3rem 5rem 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form {
+    background-color: var(--color-dark--2);
+    border-radius: 5px;
+    padding: 1.5rem 2.75rem;
+    margin-bottom: 1.75rem;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 2.5rem;
+  
+    /* Match height and activity boxes */
+    height: 9.25rem;
+    transition: all 0.5s, transform 1ms;
+  }
+  
+  .form_row {
+    display: flex;
+  }
+  
+  .form_label {
+    flex: 0 0 20%;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .logo {
+    height: 8rem;
+    align-self: center;
+    margin-bottom: 4rem;
+  }
+  .calcButton{
+    margin: auto;
+  }
+  /* MAP */
+  #map {
+    flex: 1;
+    height: 100%;
+    background-color: var(--color-light--1);
+  }
+
+  .workouts {
+    background-color: var(--color-dark--2);
+    border-radius: 5px;
+    padding: 1.5rem 2.25rem;
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+  .button1{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#0f0202;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  button1:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+  }
+  @media all and (max-width:30em){
+    a.button1{
+      display:block;
+      margin:0.4em auto;
+    }
+  }
+  /* .workout {
+  background-color: var(--color-dark--2);
+  border-radius: 5px;
+  padding: 1.5rem 2.25rem;
+  margin-bottom: 1.75rem;
+  cursor: pointer;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+}
+  .workouts::-webkit-scrollbar {
+    width: 0;
+  } */
